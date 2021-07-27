@@ -4,6 +4,7 @@ provider "aws" {
 
 variable "app" {
     type = string
+    default = "web"
 }
 data "aws_ami" "amazon-linux" {
   most_recent = true
